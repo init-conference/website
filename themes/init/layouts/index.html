@@ -3,47 +3,31 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html>
+<html lang="en">
   <head>
     {{ partial "header.html" . }}
   </head>
   <body>
-		
+
 		{{ partial "nav.html" . }}
 
-    <div class="fh5co-page">
-      <div id="fh5co-container">
-	
-	{{ partial "hero.html" . }}
-	
-	{{ if .Site.Params.mission.enable }}
-	{{ partial "mission.html" . }}
-	{{ end }}
-	
-	{{ if .Site.Params.services.enable }}
-	{{ partial "services.html" .}}
-	{{ end }}
-	
-	{{ if .Site.Params.work.enable }}
-	{{ partial "gallery.html" .}}
-	{{ end }}
-	
-	{{ if .Site.Params.team.enable }}
-	{{ partial "team.html" .}}
-	{{ end }}
+    <main class="container main-content">
 
-	{{ if .Site.Params.contact.enable }}
-	{{ partial "contact-form.html" .}}
-	{{ end }}
-	
-	{{ if .Site.Params.footer.enable }}
-	{{ partial "footer.html" .}}
-	{{ end }}
-      
-      </div>
-    </div>
-    
+    	{{ partial "hero.html" . }}
+      {{ partial "about.html" . }}
+      {{ partial "lineup.html" . }}
+      {{ partial "agenda.html" . }}
+      {{ partial "venue.html" . }}
+      {{ partial "sponsors.html" . }}
+
+      {{ if .Site.Params.subscribe.enable }}
+      {{ partial "subscribe.html" .}}
+      {{ end }}
+
+      {{ partial "footer.html" .}}
+    </main>
+
     {{ partial "js.html" .}}
-    
+
   </body>
 </html>

@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>{{ .Site.Title }}</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
@@ -18,13 +18,12 @@
 
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <!-- <link rel="shortcut icon" href="favicon.ico"> -->
-    
+
 <!-- Bootstrap  -->
 <link rel="stylesheet" href="css/bootstrap.css">
-<!-- Theme style -->
-<!-- <link rel="stylesheet" href="css/style.css"> -->
 
+<!-- Theme style -->
 {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-{{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options  }} 
+{{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options  }}
 
 <link rel="stylesheet" href="{{ $style.Permalink }}">

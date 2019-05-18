@@ -1,0 +1,14 @@
+<section>
+  <p>
+    {{ with .Site.Params.subscribe }}
+    <h2>{{ .title }}</h2>
+    <p>{{ .message | markdownify }}</p>
+
+    <form class="form-inline" name="subscribe">
+      <input class="form-control" type="email" placeholder="{{ .email_placeholder }}" />
+      <button type="submit" class="btn btn-primary">{{ .button_text }}</button>
+    </form>
+    {{ end }}
+  </p>
+</section>
+

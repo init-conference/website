@@ -10,12 +10,6 @@ title = "Init Conference"
   description = "Init Develers Conference, Banja Luka"
   keywords = "init,conference,banjaluka,banja luka,developers"
 
-# Hero section (from here on is for icon theme)
-[params.hero]
-  img = "images/hero_bg.jpg"
-  title = "Create awesome things for better web"
-  description = "Lovingly hand-crafted by the fine folks at [FreeHTML5.co](http://freehtml5.co/)"
-
 # Navigation section
 [params.nav]
   mission = "Our Mission"
@@ -193,39 +187,11 @@ title = "Init Conference"
     github = "#"
     whatsapp = "#"
 
-  # [[params.team.item]]
-  #   name = "Jason Doe"
-  #   position = "Chief haranguer"
-  #   description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-  #   img = "images/person3.jpg"
-  #   email = "#"
-  #   telephone = "#"
-  #   facebook = "#"
-  #   twitter = "#"
-  #   dribbble = "#"
-  #   instagram = "#"
-  #   github = "#"
-  #   whatsapp = "#"
-
-# Contact section
-[params.contact]
+# Subscribe section
+[params.subscribe]
   enable = true
-  title = "Get In Touch"
-  message = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-  name_placeholder = "Your name"
-  email_placeholder = "Your email"
-  email_disclaimer = "We'll never share your email with anyone else."
-  message_placeholder = "Please enter a message."
-  button_text = "Submit"
-
-# Footer section
-# Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
-[params.footer]
-  enable = true
-  note = "<p><small>&copy; 2016 Free HTML5 Template. All Rights Reserved. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a></small></p>"
-  github = "#"
-  twitter = "#"
-  facebook = "#"
-  vine = "#"
-  linkedin = "#"
-  instagram = "#"
+  title = "Subscribe"
+  message = "Subscribe to our newsletter and be the first to hear about all event news and speaker updates"
+  email_placeholder = "Your email address"
+  email_disclaimer = "We'll never share your email with anyone else"
+  button_text = "Subscribe"
