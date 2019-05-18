@@ -1,0 +1,16 @@
+// test
+
+@font-face {
+    font-family: FabrikatMono;
+    src: url("../fonts/fabrikat-mono-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FabrikatMono;
+    font-weight: bold;
+    src: url("../fonts/fabrikat-mono-bold.otf") format("opentype");
+}
+
+body {
+    font-family: FabrikatMono, sans-serif;
+}
