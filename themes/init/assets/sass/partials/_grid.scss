@@ -1,0 +1,36 @@
+/* Grid
+================================================== */
+
+.container {
+  	margin: 0 auto;
+  	max-width: $grid_max_width; /* Change per design */
+  	width: 95%; /* For responsive, 2.5% left and right of mobile phone screen. */
+}
+.row .row { 
+	margin-left: -15px; 
+	margin-right: -15px; 
+}
+[class*='column-'] {
+    float: left;
+    padding: $column_padding;
+    width: 100%;
+    min-height: 1px; 
+}
+.column.flow-opposite { 
+	float: right; 
+}
+
+@for $i from 1 through $grid_columns {
+    .column-#{$i} { 
+        width: 100% / $grid_columns * $i;
+    }
+}
+
+@include breakpoint(mobile) { 
+  .column {
+    margin: 0!important;
+    padding: 0!important;
+    float: none;
+    width: 100%!important;
+  }
+}

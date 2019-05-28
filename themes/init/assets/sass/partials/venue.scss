@@ -1,0 +1,18 @@
+.venue-section {
+    background-image: url(../images/venue-text-bg.png);
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    padding-bottom: 200px;
+    &__details {
+        font-size: 21px;
+        line-height: 31px;
+        font-weight: 500;
+    }
+}
+
+.venue-gallery {
+    margin-top: 45px;
+    .row:first-child {
+        margin-bottom: 20px;
+    }
+}

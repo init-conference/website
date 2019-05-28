@@ -1,0 +1,38 @@
+.hero {
+    height: 100vh;
+    background-image: url(../images/hero-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__text {
+        padding-right: 0;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    .button {
+        margin-top: 40px;
+    }
+} 
+
+.scroll {
+    font-size: 13px;
+    line-height: 27px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 125px;
+    display: inline-block;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 62px;
+        background-color: $color_secondary;
+        top: 35px;
+    }
+}

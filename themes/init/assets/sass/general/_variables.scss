@@ -1,0 +1,27 @@
+// Grid
+$grid_max_width: 1240px;
+$grid_columns: 12;
+$column_padding: 15px;
+
+// Typography
+$font_family: FabrikatMono, sans-serif;
+$font_size: 16px;
+$font_line_height: 1.8;
+
+// Colors: Body
+$color_body_background: #070F30;
+$color_body_text: #dfe0d5;
+// Colors: General
+$color_brand: #1FC7D8;
+$color_primary: #D3165A;
+$color_secondary: #6C54DC;
+$color_accent: #F29222;
+$color_grey: #dfe0d5;
+// Colors: Links
+$color_link: #D3165A;
+$color_button: #DFE0D4;
+$color_link_hover: lighten($color_link, 30);
+
+// breakpoints
+$breakpoint-small: "only screen and (min-width: 668px)";
+$breakpoint-medium: "only screen and (min-width: 1024px)";

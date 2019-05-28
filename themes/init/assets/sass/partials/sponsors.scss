@@ -1,0 +1,38 @@
+.sponsors-section {
+    background-image: url(../images/sponsors-text-bg.png), url(../images/sponsors-bg.png);
+    background-repeat: no-repeat;
+    background-position: center 20px, center top;
+    padding: 50px 0 220px 0;
+}
+
+.sponsor-type {
+    margin-top: 50px;
+    h6 {
+        font-size: 21px;
+        color: $color_primary;
+        margin-bottom: 35px;
+    }
+}
+
+.sponsor-list {
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 50px;
+    }
+    &--gold {
+        margin-bottom: 75px;
+        img {
+            max-height: 62px;
+        }
+    }
+    &--silver {
+        margin-bottom: 60px!important;
+        li {
+            margin: 0 45px 50px 0;
+        }
+        img {
+            max-height: 45px;
+        }
+    }
+}

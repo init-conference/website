@@ -7,5 +7,3 @@
 
 # Hugo
 resources/_gen/*
-themes/*
-!themes/init/*

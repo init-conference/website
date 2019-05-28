@@ -1,0 +1,44 @@
+.button-ticket {
+    background-image: url(../images/ticket-button.png);
+    color: $color_grey;
+    min-width: 123px;
+    text-align: center;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 5px 10px 6px 10px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.menu {
+    margin: 0 auto;
+    &__item {
+        display: inline-block;
+        &__link {
+            color: rgba(223, 224, 213, 0.4);
+            padding: 17px;
+            &:hover {
+                color: $color_grey;
+            }
+        }
+        &:first-child a {
+            padding-left: 0;
+        }
+        &:last-child a {
+            padding-right: 0;
+        }
+    }
+}

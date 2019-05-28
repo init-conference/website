@@ -1,0 +1,58 @@
+// Border Box
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+// BEM element/modifier
+@mixin element($element) {
+	&__#{$element}{
+		@content;
+	}
+}
+@mixin modifier($modifier) {
+	&--#{$modifier}{
+		@content;
+	}
+}
+
+// Responsive
+@mixin breakpoint($break) {
+	@if $break == large {
+		@media (max-width: 1200px) { @content; }
+	}
+	@else if $break == mobile {
+		@media (max-width: 668px) { @content; }
+	}
+}
+// Used as: @include breakpoint(large) { background: red; }
+
+// Animations
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+// Used as @include keyframes(slide-down) { 0% { opacity: 1; } 90% { opacity: 0; } }
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+// Used as: @include animation('slide-down 5s 3');
