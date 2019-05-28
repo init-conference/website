@@ -8,7 +8,7 @@
   const nav = document.getElementById('js--sticky-nav');
   window.addEventListener('scroll', (event) => {
     const fromTop = window.scrollY;
-    if (section.offsetTop <= fromTop) {
+    if (section.offsetTop - 150 <= fromTop) {
       nav.classList.add('sticky');
     } else {
       nav.classList.remove('sticky');
@@ -30,13 +30,5 @@ function scrollAnchors(e, respond = null) {
   const originalTop = distanceToTop(targetAnchor);
 
   window.scrollBy({ top: originalTop - 150, left: 0, behavior: 'smooth' });
-  const checkIfDone = setInterval(() => {
-    const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-    if (distanceToTop(targetAnchor) === 0 || atBottom) {
-      targetAnchor.tabIndex = '-1';
-      targetAnchor.focus();
-      window.history.pushState('', '', targetID);
-      clearInterval(checkIfDone);
-    }
-  }, 100);
+  window.history.pushState('', '', targetID);
 }
