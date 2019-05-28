@@ -1,23 +1,53 @@
 <footer>
-  <h3>#INIT2019</h3>
-  <div class="row">
-    <div class="col-sm">
-      Friday<br>
-      November 2nd 2019.<br>
-      Banski Dvor
+  <!--Subscribe Section-->
+  {{ if .Site.Params.subscribe.enable }}
+  {{ partial "subscribe.html" .}}
+  {{ end }}
+
+  <div class="container footer-content">
+    <div class="row">
+      <div class="col">
+        <a class="footer-logo" href="#"><img src="images/footer-logo.png"/></a>
+      </div>
     </div>
-    <div class="col-sm">
-      <a href="#">Buy Ticket</a><br>
-      <a href="#">Become a Sponsor</a>
-    </div>
-    <div class="col-sm">
-      <address>
-        <a href="tel:+38765666999">+387 65 666 999</a>
-        <a href="mailto:hello@initconf.org">hello@initconf.org</a>
-      </address>
-    </div>
-    <div>
-      &copy; 2019 init conference
+
+    <div class="row">
+      <div class="col">
+        <p class="brand-color">Friday<br>November 2nd 2019.<br>Banski Dvor</p>
+      </div>
+
+      <div class="col footer-nav">
+        <a href="#">Buy Ticket</a><br>
+        <a href="#">Become a Sponsor</a>
+      </div>
+
+      <div class="col">
+        <address>
+          <a href="tel:+38765666999">+387 65 666 999</a>
+          <a href="mailto:hello@initconf.org">hello@initconf.org</a>
+        </address>
+      </div>
+
+      <div class="col">
+        <p>&copy; 2019 init conference</p>
+      </div>
     </div>
   </div>
+
+  
+  <div class="row">
+    <div class="col-sm">
+      
+    </div>
+    <div class="col-sm">
+      
+    </div>
+    <div class="col-sm">
+      
+    </div>
+    <div>
+      
+    </div>
+  </div>
+    
 </footer>

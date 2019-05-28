@@ -1,20 +1,28 @@
-// test
+// Variables & Mixins
+@import "general/variables";
+@import "general/mixins";
 
-@font-face {
-    font-family: FabrikatMono;
-    src: url("../fonts/fabrikat-mono-regular.otf") format("opentype");
-}
+// Reset
+@import "partials/base";
 
-@font-face {
-    font-family: FabrikatMono;
-    font-weight: bold;
-    src: url("../fonts/fabrikat-mono-bold.otf") format("opentype");
-}
+// Grid
+@import 'partials/grid';
 
-body {
-    font-family: FabrikatMono, sans-serif;
-}
+// Font
+@import 'partials/font';
 
-.main-content {
-    margin-top: 86px;
-}
+// Partials
+@import "partials/buttons";
+@import "partials/nav";
+@import "partials/hero";
+@import "partials/about";
+@import "partials/lineup";
+@import "partials/venue";
+@import "partials/sponsors";
+@import "partials/subscribe";
+@import "partials/footer";
+
+// Helpers
+@import 'partials/helpers';
+
+

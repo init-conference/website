@@ -5,13 +5,13 @@
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html lang="en">
   <head>
-    {{ partial "header.html" . }}
+    {{ partial "head.html" . }}
   </head>
   <body>
 
-		{{ partial "nav.html" . }}
+		
 
-    <main class="container main-content">
+    <main class="main-content">
 
     	{{ partial "hero.html" . }}
       {{ partial "about.html" . }}
@@ -20,9 +20,7 @@
       {{ partial "venue.html" . }}
       {{ partial "sponsors.html" . }}
 
-      {{ if .Site.Params.subscribe.enable }}
-      {{ partial "subscribe.html" .}}
-      {{ end }}
+      
 
       {{ partial "footer.html" .}}
     </main>

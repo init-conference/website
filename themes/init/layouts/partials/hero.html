@@ -1,18 +1,19 @@
-<section>
-  <div class="jumbotron">
-    <h1>Say Hello World<br>in person</h1>
-    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head.</p>
-    <button type="button" class="btn btn-primary">
-      Get your ticket
-    </button>
+<section class="hero">
+  <!--Include navigation-->
+  {{ partial "nav.html" . }}
+
+  <!--Hero Content-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 hero__text reveal offset-md-1">
+        <h1 class="hero__title">Say <span class="primary-color">Hello World</span><br><span class="secondary-color">in</span> <span class="brand-color">person</span></h1>
+        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head.</p>
+        <button type="button" class="button button--pink">Get your ticket</button>
+      </div>
+    </div>
   </div>
 
-  <div>
-    Scroll down
-  </div>
-
-  <div class="text-right">
-    <div>Share using</div>
-    <div>#INIT2019</div>
+  <div class="container">
+    <a class="scroll secondary-color offset-md-1" href="#about">Scroll down</a>
   </div>
 </section>

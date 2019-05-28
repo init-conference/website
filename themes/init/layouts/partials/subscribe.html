@@ -1,14 +1,22 @@
-<section>
-  <p>
-    {{ with .Site.Params.subscribe }}
-    <h2>{{ .title }}</h2>
-    <p>{{ .message | markdownify }}</p>
+<section class="sbscribe-section">
+  <div class="container">
+    <div class="row">
+      <div class="col offset-md-1">
+        <p>
+          {{ with .Site.Params.subscribe }}
+          <!--<h2>{{ .title }}</h2>-->
+          <p class="subscribe-intro">{{ .message | markdownify }}</p>
+      
+          <form class="form-inline subscribe-form" name="subscribe">
+            <input type="email" placeholder="{{ .email_placeholder }}" />
+            <button type="submit" >{{ .button_text }}</button>
+          </form>
+          {{ end }}
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <form class="form-inline" name="subscribe">
-      <input class="form-control" type="email" placeholder="{{ .email_placeholder }}" />
-      <button type="submit" class="btn btn-primary">{{ .button_text }}</button>
-    </form>
-    {{ end }}
-  </p>
+  
 </section>
 

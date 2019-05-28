@@ -43,7 +43,7 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1240px;
   }
 }
 
@@ -603,7 +603,7 @@ html {
     margin-left: 0;
   }
   .offset-md-1 {
-    margin-left: 8.333333%;
+    margin-left: 9%;
   }
   .offset-md-2 {
     margin-left: 16.666667%;
