@@ -3,7 +3,7 @@
     color: $color_grey;
     min-width: 123px;
     text-align: center;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
     padding: 5px 10px 6px 10px;
     letter-spacing: 1.5px;
@@ -11,9 +11,21 @@
 }
 
 .nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
     display: flex;
     align-items: center;
     padding: 30px;
+    &.sticky {
+        background-color: #070f30;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
 }
 
 .top-nav {

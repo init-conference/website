@@ -4,28 +4,22 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html lang="en">
-  <head>
-    {{ partial "head.html" . }}
-  </head>
-  <body>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+        <main class="main-content">
+            {{ partial "nav.html" . }}
+            {{ partial "hero.html" . }}
+            {{ partial "about.html" . }}
+            {{ partial "lineup.html" . }}
+            {{ partial "agenda.html" . }}
+            {{ partial "venue.html" . }}
+            {{ partial "sponsors.html" . }}
 
-		
+            {{ partial "footer.html" .}}
+        </main>
 
-    <main class="main-content">
-
-    	{{ partial "hero.html" . }}
-      {{ partial "about.html" . }}
-      {{ partial "lineup.html" . }}
-      {{ partial "agenda.html" . }}
-      {{ partial "venue.html" . }}
-      {{ partial "sponsors.html" . }}
-
-      
-
-      {{ partial "footer.html" .}}
-    </main>
-
-    {{ partial "js.html" .}}
-
-  </body>
+        {{ partial "js.html" .}}
+    </body>
 </html>

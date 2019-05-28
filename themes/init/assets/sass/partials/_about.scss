@@ -1,17 +1,23 @@
 .about-section {
-    background-image: url(../images/init-2019.png), url(../images/about-lines.png);
+    background-image: url(../images/init-2019.png),
+        url(../images/about-lines.png);
     background-repeat: no-repeat;
     background-position: center 120px, 79% 35px;
     background-size: auto, 0px;
     animation-name: loadbg;
     animation-duration: 5s;
+    animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     padding: 140px 0 30px 0;
 }
 
 @keyframes loadbg {
-    from {background-size: auto, 0px}
-    to {background-size: auto, 50%}
+    from {
+        background-size: auto, 0px;
+    }
+    to {
+        background-size: auto, 50%;
+    }
 }
 
 .hashtag-share {
@@ -34,7 +40,7 @@
     margin-left: 105px;
     li {
         margin-bottom: 25px;
-        list-style: none
+        list-style: none;
     }
     h3 {
         font-weight: bold;
@@ -88,6 +94,10 @@
     }
 }
 @keyframes loadstatbg {
-    from {background-size: 0px}
-    to {background-size: 35%}
+    from {
+        background-size: 0px;
+    }
+    to {
+        background-size: 35%;
+    }
 }

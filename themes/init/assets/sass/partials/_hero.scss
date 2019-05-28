@@ -1,4 +1,5 @@
 .hero {
+    padding-top: 99px;
     height: 100vh;
     background-image: url(../images/hero-background.png);
     background-position: top center;
@@ -6,7 +7,7 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     &__text {
         padding-right: 0;
     }
