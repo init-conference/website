@@ -1,6 +1,6 @@
 # Main config file for Init Conference website.
 theme = "init"
-baseURL = "https://init-conference.github.io/"
+baseURL = "https://2019.initconf.org/"
 languageCode = "en-US"
 title = "Init Conference"
 
