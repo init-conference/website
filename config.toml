@@ -191,7 +191,7 @@ title = "Init Conference"
 [params.subscribe]
   enable = true
   title = "Subscribe"
-  message = "Subscribe to our newsletter and be the first to hear about all event news and speaker updates"
+  message = "Subscribe to our newsletter and be the first to hear about INIT 2019 news and speaker updates"
   email_placeholder = "Your email address"
   email_disclaimer = "We'll never share your email with anyone else"
   button_text = "Subscribe"
