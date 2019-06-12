@@ -1,0 +1,188 @@
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 55px;
+        line-height: 1.2;
+    }
+    .why-text {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .offset-left {
+        padding-left: 15px;
+    }
+    .menu__item__link {
+        padding: 12px;
+    }
+    .about-list {
+        margin-left: 60px;
+    }
+    .conf-stats li span {
+        font-size: 40px;
+        padding-right: 12px;
+    }
+    .conf-stats li {
+        font-size: 17px;
+    }
+    .lineup-section__subtitle {
+        font-size: 50px;
+    }
+    
+}
+
+@media (max-width: 668px) {
+    .mobile-none {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .button {
+        padding: 12px 28px;
+        font-size: 18px;
+    }
+    .top-nav {
+        display: none;
+    }
+    .nav-bar {
+        padding: 20px;
+        background: -webkit-linear-gradient(top, rgba(7,15,49,1) 0%, rgba(7,15,49,0.38) 39%, rgba(7,15,49,0.21) 54%, rgba(7,15,49,0) 89%);
+    }
+    .scroll:after {
+        height: 40px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    /** Hero **/
+    .hero {
+        background-image: url(../images/hero-mobile2.png);
+        background-size: 460px;
+        background-position: -80% -72px;
+        background-position: -133px -145px;
+        background-size: 505px;
+    }
+    .hero__title .primary-color {
+        display: block;
+    }
+    .hero__title br {
+        display: none;
+    }
+    .hero .button {
+        margin-top: 10px;
+    }
+    .scroll {
+        margin-bottom: 0;
+    }
+    /** About Section **/
+    .about-section {
+        background-image: none;
+        padding: 60px 0 120px 0;
+    }
+    .why-text {
+        margin-bottom: 30px;
+    }
+    .about-list h3 span {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-right: 8px;
+    }
+    .conf-stats li {
+        margin-right: 28px;
+    }
+    .conf-stats li:last-child {
+        margin-right: 0;
+    }
+    .conf-stats {
+        padding-bottom: 0;
+    }
+
+    /** Lineup Section **/
+    .lineup-section {
+        background-image: none;
+        padding: 20px 0 120px 0;
+    }
+    .lineup-section__subtitle {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .all-speakers {
+        padding: 0 15px 70px 15px;
+        text-align: center;
+    }
+    .speakers-call {
+        margin-top: 60px;
+    }
+    .all-speakers:before {
+        width: 106%;
+        top: 0;
+        left: -3%;
+    }
+    
+
+    /** Venue **/
+    .venue-section {
+        background-image: none;
+        padding: 20px 0 120px 0;
+    }
+    .venue-section br {
+        display: none;
+    }
+    .venue-section__details {
+        margin-bottom: 25px!important;
+    }
+    .venue-section__details span {
+        display: block;
+    }
+
+    /** Sponsors **/
+    .sponsors-section {
+        background-image: none;
+        padding: 20px 0 120px 0;
+        br {
+            display: none;
+        }
+    }
+    .sponsor-list--gold li {
+        margin-right: 5%;
+        width: 46%;
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+    }
+    .sponsor-list--silver li {
+        margin: 0 4% 7% 0;
+        width: 28%;
+        &:nth-child(3n+3) {
+            margin-right: 0;
+        }
+    }
+    .button--temporary {
+        margin: 0;
+    }
+
+    /** Subscribe **/
+    .sbscribe-section {
+        background-image: none;
+        padding-top: 20px;
+    }
+    .subscribe-intro {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    /** Footer **/
+    footer {
+        padding-bottom: 80px;
+    }
+    .footer-nav {
+        margin: 20px 0;
+    }
+    footer address {
+        margin-top: 20px;
+    }
+}
+
