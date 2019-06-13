@@ -10,7 +10,35 @@
     font-weight: bold;
 }
 
+@-webkit-keyframes fadeIn {
+    from {
+        top: -50px;
+    }
+    to {
+        top: 0;
+    }
+}
+@-moz-keyframes fadeIn {
+    from {
+        top: -50px;
+    }
+    to {
+        top: 0;
+    }
+}
+@keyframes fadeIn {
+    from {
+        top: -50px;
+    }
+    to {
+        top: 0;
+    }
+}
+
 .nav-bar {
+    -webkit-animation: fadeIn 1.5s ease;
+    -moz-animation: fadeIn 1.5s ease;
+    animation: fadeIn 1.5s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -42,7 +70,8 @@
         &__link {
             color: rgba(223, 224, 213, 0.4);
             padding: 17px;
-            &:hover {
+            &:hover,
+            &.active {
                 color: $color_grey;
             }
         }
