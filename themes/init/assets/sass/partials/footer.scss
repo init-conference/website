@@ -3,6 +3,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center bottom;
     padding-bottom: 150px;
+    position: relative;
 }
 
 .footer-content {
@@ -22,4 +23,14 @@ footer {
 .footer-logo {
     margin-bottom: 15px;
     display: inline-block;
+}
+
+.powered-call {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.6;
 }
