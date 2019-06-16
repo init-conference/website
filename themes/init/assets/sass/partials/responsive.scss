@@ -59,7 +59,7 @@
         position: absolute;
         width: 30px;
         right: 30px;
-        top: 20px;
+        top: 24px;
     }
     .topNavBtn span {
         display: block;
@@ -135,7 +135,7 @@
         z-index: 1;
     }
     .nav-bar {
-        padding: 20px 30px;
+        padding: 20px 30px 15px 30px;
         background: -webkit-linear-gradient(top, rgba(7,15,49,1) 0%, rgba(7,15,49,0.38) 39%, rgba(7,15,49,0.21) 54%, rgba(7,15,49,0) 89%);
     }
     .scroll:after {
