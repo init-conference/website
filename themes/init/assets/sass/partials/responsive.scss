@@ -36,6 +36,9 @@
     .mobile-none {
         display: none;
     }
+    .powered-by {
+        margin: 10px 0;
+    }
     .mobile-only {
         display: block;
     }
@@ -284,13 +287,8 @@
 
 @media (max-width: 500px) {
     .hero {
-        background-size: 500px;
-        background-position: -65px -115px;
         /*background-size: auto;
         background-position: -200px -200px;*/
-    }
-    .powered-call {
-        font-size: 13px;
     }
 }
 

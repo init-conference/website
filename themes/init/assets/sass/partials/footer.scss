@@ -19,18 +19,10 @@ footer {
         }
     }
 }
-
+.powered-by {
+    margin-bottom: 0;
+}
 .footer-logo {
     margin-bottom: 15px;
     display: inline-block;
-}
-
-.powered-call {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 15px;
-    opacity: 0.6;
 }
