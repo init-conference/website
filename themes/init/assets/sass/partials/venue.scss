@@ -1,7 +1,7 @@
 .venue-section {
-    background-image: url(../images/venue-text-bg.png);
+    background-image: url(../images/venue-text-bg.png), url(../images/venue-bg.png);
     background-repeat: no-repeat;
-    background-position: center 10px;
+    background-position: center 10px, 56% 60%;
     padding-bottom: 200px;
     &__details {
         font-size: 21px;
@@ -15,4 +15,4 @@
     .row:first-child {
         margin-bottom: 20px;
     }
-}
+} 

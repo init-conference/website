@@ -36,3 +36,33 @@
         top: 35px;
     }
 }
+
+
+img.vert-move {
+    position: absolute;
+    top: 17%;
+    right: 9%;
+    width: 39vw;
+}
+.maskota {
+    position: absolute;
+    width: 24vw;
+    right: 11%;
+    bottom: 13%;
+}
+
+
+/** Social **/
+.social-networks {
+    position: fixed;
+    right: 30px;
+    li {
+        list-style: none;
+        margin-bottom: 20px;
+        opacity: 0.3;
+        transition: all linear 100ms;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
