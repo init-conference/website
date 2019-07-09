@@ -28,7 +28,19 @@
     }
     .lineup-section__subtitle {
         font-size: 50px;
-    }  
+    } 
+    .sponsor-list {
+        &--supporter {
+            li {
+                max-width: 30%;
+            }
+        }
+        &--friends {
+            li {
+                max-width: 30%;
+            }
+        }
+    } 
 }
 
 /** Most Screens **/
@@ -141,6 +153,24 @@
     .scroll:after {
         height: 40px;
     }
+
+    /** Mobile Social **/
+    .social-networks {
+        display: none;
+    }
+    .mobile-social {
+        display: block;
+        margin-top: 20px;
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            opacity: 0.5;
+            img {
+                max-width: 20px;
+            }
+        }
+    }
+
     h1 {
         font-size: 40px;
     }
@@ -235,20 +265,6 @@
             display: none;
         }
     }
-    .sponsor-list--gold li {
-        margin-right: 5%;
-        width: 46%;
-        &:nth-child(even) {
-            margin-right: 0;
-        }
-    }
-    .sponsor-list--silver li {
-        margin: 0 4% 7% 0;
-        width: 28%;
-        &:nth-child(3n+3) {
-            margin-right: 0;
-        }
-    }
 
     /** Subscribe **/
     .sbscribe-section {
@@ -290,6 +306,20 @@
         /*background-size: auto;
         background-position: -200px -200px;*/
     }
+    .sponsor-list {
+        &--supporter {
+            li {
+                max-width: 42%;
+                margin-right: 6%;
+            }
+        }
+        &--friends {
+            li {
+                max-width: 45%;
+                margin-right: 5%;
+            }
+        }
+    } 
 }
 
 
