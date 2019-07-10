@@ -51,11 +51,21 @@ img.vert-move {
     bottom: 13%;
 }
 
+.join-us {
+    position: fixed;
+    left: 15px;
+    bottom: 0;
+    color: #6C54DC;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+}
+
 
 /** Social **/
 .social-networks {
     position: fixed;
     right: 30px;
+    bottom: 0;
     li {
         list-style: none;
         margin-bottom: 20px;
