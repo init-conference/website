@@ -49,6 +49,31 @@
         float: none;
         margin: 20px 0 40px 0;
     }
+    /** Jobs Page **/
+    .job-accordion {
+        img {
+            max-width: 100%;
+        }
+        &__item {
+            &:after {
+                right: 25px;
+                top: 20px;
+            }
+        }
+    }
+    .job-position {
+        h3 {
+            font-size: 24px;
+        }
+        &:after {
+            right: 25px;
+        }
+    }
+    .job-description {
+        max-width: 100%;
+        padding: 0 35px 90px 35px;
+        margin: 0;
+    }
 }
 
 /** Most Screens **/
@@ -331,6 +356,13 @@
             }
         }
     } 
+    /** Jobs Page **/
+    .job-accordion {
+        img {
+            max-width: 160px;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 
