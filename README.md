@@ -13,7 +13,7 @@ This repository contains source files for [Init Conference 2019](http://initconf
 2. Create `/hugo` root folder and open it in shell.
 3. Clone `website` into `/hugo/init-conference`:
     - `git clone https://github.com/init-conference/website init-conference`
-4. *[Not yet ready]* Clone GitHub Pages repository `init-conference.github.io` into `hugo/init-conference.github.io`:
+4. Clone GitHub Pages repository `init-conference.github.io` into `hugo/init-conference.github.io`:
     - `git clone https://github.com/init-conference/init-conference.github.io.git`
 5. Go to `/hugo/init-conference`:
     - `cd init-conference`
@@ -31,6 +31,12 @@ This repository contains source files for [Init Conference 2019](http://initconf
 + `themes/init/layouts/index.html` - main layout file that combines all the partials
 + `themes/init/static/` - all static files (CSS, JS, fonts, images)
 + `config.toml` - main Hugo config file - contains parameters used on pages and partials
+
+## Creating other static pages
+
++ Create a new static page in `themes/init/layouts/_default/` folder - i.e. `jobs.html`
++ Make sure you are using rooted links in those pages - i.e. `/images/some-image.png` (with `/` prefix)
++ Create a placeholder page in `/content/` folder - i.e. `/content/jobs/_index.md`
 
 ## Building output
 
