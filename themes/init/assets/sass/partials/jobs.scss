@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     padding: 25px;
-    margin: 0!important;
+    margin: 0 !important;
     transition: all linear 200ms;
     cursor: pointer;
     h3 {
@@ -60,5 +60,15 @@
     ul {
         padding-left: 15px;
         margin-bottom: 40px;
+    }
+}
+.job-accordion__item {
+    .job-description {
+        display: none;
+    }
+    &.job-accordion__item--open {
+        .job-description {
+            display: block;
+        }
     }
 }
