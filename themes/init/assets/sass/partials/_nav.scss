@@ -90,3 +90,15 @@
 .mobile-social {
     display: none;
 }
+
+
+.tickets-section {
+    margin-top: 150px;
+    iframe {
+        max-width: 720px;
+        width: 100%;
+        margin: auto;
+        display: block;
+        transition: all linear 200ms;
+    }
+}
