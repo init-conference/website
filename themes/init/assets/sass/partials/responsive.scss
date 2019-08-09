@@ -363,6 +363,14 @@
             margin-bottom: 10px;
         }
     }
+    /** Tickets **/
+    .ticket-desc h3 {
+        font-size: 21px;
+        padding: 0 10px;
+        br {
+            display: none;
+        }
+    }
 }
 
 
