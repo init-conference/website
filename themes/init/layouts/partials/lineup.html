@@ -13,104 +13,25 @@
         <div class="all-speakers">
             <div class="row">
                 <div class="col">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <div class="speaker-box">
-                        <img src="images/person-1.jpg" />
-                        <div class="speaker-box__details">
-                          <h5>Arian Stipic</h5>
-                          <h6>Digital Transformation Advisor / Digital Architect</h6>
-                          <a href="#" data-toggle="modal" data-target="#speakerArianStipic">Read more</a>
+                    <div class="row">
+                        {{range $index, $element := .Site.Params.speaker.item}}
+                        <div class="col-sm-3">
+                            <div class="speaker-box">
+                                <img src="{{.img}}" />
+                                <div class="speaker-box__details">
+                                    <h5>{{.name}}</h5>
+                                    <h6>{{.talk}}</h6>
+                                    <a
+                                        href="#"
+                                        data-toggle="modal"
+                                        data-target="#speaker{{ $index }}"
+                                        >Read more</a
+                                    >
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                        {{ end }}
                     </div>
-
-                    <div class="col-sm-3">
-                      <div class="speaker-box">
-                        <img src="images/person-2.jpg"/>
-                        <div class="speaker-box__details">
-                          <h5>Spider Man</h5>
-                          <h6>CEO at Naked Truth INC</h6>
-                          <a href="#">Read more</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                      <div class="speaker-box">
-                        <img src="images/person-1.jpg"/>
-                        <div class="speaker-box__details">
-                          <h5>Daredevil</h5>
-                          <h6>Software engineer at Google</h6>
-                          <a href="#">Read more</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                      <div class="speaker-box">
-                        <img src="images/person-2.jpg"/>
-                        <div class="speaker-box__details">
-                          <h5>Gandalf the Grey</h5>
-                          <h6>Marketing Strategist at Information Systems </h6>
-                          <a href="#">Read more</a>
-                        </div>
-                      </div>
-                    </div>
-
-                      <div class="col-sm-3">
-                        <div class="speaker-box">
-                          <img src="images/person-2.jpg">
-                          <div class="speaker-box__details">
-                            <h5>Cat Woman</h5>
-                            <h6>Lead dev at Epic Games</h6>
-                            <a href="#">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-          
-                      <div class="col-sm-3">
-                        <div class="speaker-box">
-                          <img src="images/person-1.jpg"/>
-                          <div class="speaker-box__details">
-                            <h5>Spider Man</h5>
-                            <h6>CEO at Naked Truth INC</h6>
-                            <a href="#">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-          
-                      <div class="col-sm-3">
-                        <div class="speaker-box">
-                          <img src="images/person-2.jpg"/>
-                          <div class="speaker-box__details">
-                            <h5>Daredevil</h5>
-                            <h6>Software engineer at Google</h6>
-                            <a href="#">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-          
-                      <div class="col-sm-3">
-                        <div class="speaker-box">
-                          <img src="images/person-1.jpg"/>
-                          <div class="speaker-box__details">
-                            <h5>This May Be You!</h5>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!--
-                      <div class="row speakers-call">
-                        <div class="offset-sm-3 col-sm-6">
-                            <h3>Comming soon!</h3>
-                            <p>
-                               
-                            </p>
-                        </div>
-                      </div>
-                    -->
                 </div>
             </div>
         </div>
@@ -118,31 +39,36 @@
 </section>
 
 <!-- Speaker Details -->
-<div class="modal speaker-modal fade" id="speakerArianStipic" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Arian Stipic</h5>
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-4">
-              <img src="images/person-1.jpg" />
+{{range $index, $element := .Site.Params.speaker.item}}
+<div
+    class="modal speaker-modal fade"
+    id="speaker{{ $index }}"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+>
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{.name}}</h5>
             </div>
-            <div class="col-sm-8">
-              Digital Transformation Advisor and Digital Architect officially certified for Digital Business Transformation Management with more than two decades of experience in managing enterprise and solution architectures and leading global teams to design, deliver and coordinate digital transformation projects and solutions in medium (+5M$), large (+25M$) and mega (+100M$) projects.
-              More than 20 years of experience in a combination of consulting, management, presales, sales and development activities with emphasis on advisory, IT strategy consulting, business development, partner management. Supervised RFP responses and managed small and medium-sized (up to 50 people) multinational teams.
-              Whenever possible, more oriented towards long term strategy, context, outcomes and benefits as opposed to short term tactics, content, outputs and deliverables.
-              A generalist specialized in Business Intelligence, including data warehouse modernization, Big Data, Advanced Analytics and Artificial Intelligence.
-              Trusted advisor to clients in multiple global industries including healthcare, transportation, retail, education and telecom throughout EMEA region. 
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/person-1.jpg" />
+                        </div>
+                        <div class="col-sm-8">
+                                <h3 class="modal-title">{{.talk}}</h3>{{.content}}</div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="modal-footer">
+                <button type="button" class="button button--pink" data-dismiss="modal">
+                    Close
+                </button>
+            </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="button button--pink" data-dismiss="modal">Close</button>
-      </div>
     </div>
-  </div>
 </div>
+{{ end }}
