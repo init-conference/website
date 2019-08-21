@@ -48,4 +48,14 @@
     &--temporary {
         margin-top: 40px;
     }
+
+    .modal & {
+        font-size: 18px;
+        padding: 10px 20px;
+        &:before {
+            top: 5px;
+            left: 5px;
+            bottom: -5px;
+        }
+    }
 }

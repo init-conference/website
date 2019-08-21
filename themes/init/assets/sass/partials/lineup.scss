@@ -91,3 +91,19 @@
         margin-bottom: 35px;
     }
 }
+
+.speaker-modal .modal-content {
+    background-color: $color_body_background;
+
+    .modal-header, .modal-footer {
+        border: 0;
+    }
+    
+    .modal-title {
+        color: $color_brand;
+        font-size: 21px;
+        text-transform: uppercase;
+    }
+
+
+}
