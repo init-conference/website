@@ -14,13 +14,29 @@ title = "Init Conference"
 [params.speaker]
 
     [[params.speaker.item]]
+        name = "Arian Stipic"
+        title = "Digital Transformation Advisor / Digital Architect"
+        about = """
+            Digital Transformation Advisor and Digital Architect officially certified for Digital Business Transformation Management with more than two decades of experience in managing enterprise and solution architectures and leading global teams to design, deliver and coordinate digital transformation projects and solutions in medium (+5M$), large (+25M$) and mega (+100M$) projects.
+            More than 20 years of experience in a combination of consulting, management, presales, sales and development activities with emphasis on advisory, IT strategy consulting, business development, partner management. Supervised RFP responses and managed small and medium-sized (up to 50 people) multinational teams.
+            Whenever possible, more oriented towards long term strategy, context, outcomes and benefits as opposed to short term tactics, content, outputs and deliverables.
+            A generalist specialized in Business Intelligence, including data warehouse modernization, Big Data, Advanced Analytics and Artificial Intelligence.
+            Trusted advisor to clients in multiple global industries including healthcare, transportation, retail, education and telecom throughout EMEA region.
+        """
+        img =  "images/speakers/arian-stipic.jpg"
+        linkedin = "https://www.linkedin.com/in/arian-stipic/"
+        talk = "Deep learning advancements"
+        content = """
+            This session explains how recent development in the field of Artificial Intelligence (AI) makes gap between human and machine smaller than ever before, by explaining and comparing traditional approach user in development of AI systems with new approach that has been used by AI system AlphaZero, developed by DeepMind. Traditionally AI systems have been tested in chess and the same has been done to demonstrate the power of AlphaZero. But, instead of playing against human, it played against the best (at the time) chess program Stockfish. While chess programs (before AlphaZero), were using powerful hardware and embedded built-in formal knowledge about the game, AlphaZero is using completely new approach, running on standard hardware and using deep learning. It learned about the game by playing a large number of games with itself, learning in the process. Session will also explain what is so revolutionary in AlphaZero approach to AI and how this new approach can be used in different areas of processing visual information, bio-medicine, autonomous driving, robotics and AI generated images/videos of humans.
+        """
+        cospeaker = "Tomislav Bronzin"
+
+    [[params.speaker.item]]
         name = "Bogdan Kecman"
         title = "Owner / CEO at BAD TEAM"
         about = """
             Many years in IT business as a developer, architect and a consultant.
-
             Specialties: IT Management, Consulting, Programming, Telco's, Satellites, Databases, Banking...
-
             To summarize - ** I make things get done **
         """
         img = "images/speakers/bogdan-kecman.jpg"
@@ -30,9 +46,56 @@ title = "Init Conference"
         content = "Advanced techniques in using RDBMS. Learn how to use your database as a pro, squeeze the last drop of performance from the same hardware. Design your system to be both high available and high reliable. Don’t get stuck in mediocrity, move your system further by learning secrets professionals won’t share on StackOverflow."
 
     [[params.speaker.item]]
+        name = "Catalin Gheorghiu"
+        title = "I Computer Solutions"
+        about = """
+            Catalin is a solution architect from Timisoara Romania. The current interests are in the area of (I)IoT, industrial mobile and cloud solutions. In addition to addressing the software development and architecture, is a trainer and consultant. In his spare time is member of the technical community, contributing with articles and blogs (signed MrSmersh), presentations to several user groups/meetups (also is RONUA Timisoara user group leader), and lecturing all over Romania and abroad.
+            Since 2011, every year he was awarded the Microsoft MVP Award.
+        """
+        img = "images/speakers/catalin-gheorghiu.jpg"
+        web = "http://www.icomputersolutions.ro/en/index.htm"
+        twitter = "https://twitter.com/MrSmersh"
+        linkedin = "https://www.linkedin.com/in/catalingheorghiu/"
+        talk = "Machine Learning on the IoT Edge"
+        content = """
+            Or options in running TensorFlow on Pi. My idea was (a bit born from need), to run TensorFlow on Pi class device. And this presentation is born from my adventures, showing pro and cons of each approach. From running directly on Pi to Azure IoT Edge on to Intel Neural Stick, and the list most probably is in “works” you will see the challenges and results of implementing TensorFlow using these technologies. Remark: Kinder chocolates have noting to do with ML but will be present ;).
+        """
+        cospeaker = "Rastko Djordjevic"
+
+    [[params.speaker.item]]
+        name = "Darko Mesaros"
+        title = "Specialist Solutions Architect @ AWS"
+        about = """
+            Darko is a Solutions Architect working for AWS in Berlin, Germany. As a SA within AWS, he helps shape the strategy and enable the broad use of Amazon's utility computing web services by directly working with customers. Darko owns the technical engagement and defining implementation architectures, developing deep expertise in the AWS technologies as well as broad know-how about how applications and services are constructed using the AWS platform. He comes from Subotica, Serbia.
+        """
+        img = "images/speakers/darko-mesaros.jpg"
+        twitter = "https://twitter.com/darkosubotica"
+        linkedin = "https://www.linkedin.com/in/darko-mesaro%C5%A1-02b66622/"
+        talk = "Tale of Two Pizzas: Developer Tools @ AWS"
+        content = """
+            In this session, we will cover how you begin your DevOps journey by sharing best practices and tools by the "two pizza" engineering teams at Amazon. Darko will showcase how you can accelerate developer productivity by implementing continuous integration and delivery workflows. We will also cover an introduction to AWS Developer Tools set of Services, inspired by Amazon's internal developer tools and DevOps practice.
+        """
+
+    [[params.speaker.item]]
+        name = "Dragan Lalos"
+        title = "STA Travel - Teamleader Applications R&D"
+        about = """
+            I have been working as a software engineer for more than eight years. Currently, I am responsible for spotting internal or external problems and finding solutions that should enable the company to work faster, and lower the costs.
+        """
+        img = "images/speakers/dragan-lalos.jpg"
+        web = "https://www.statravel.de/"
+        linkedin = "https://www.linkedin.com/in/draganlalos/"
+        talk = "JS: Where to implement rendering in your application - CSR or SSR?"
+        content = """
+            These days Single Page Application (SPA) is trendy, and with that Client Side Rendering (CSR) comes by default, and people forget what Server Side Rendering (SSR) is. Let's try to explain what is the difference between these two, so you understand architecture better when you need to decide on what will you use. CSR or SSR?
+        """
+
+    [[params.speaker.item]]
         name = "Igor Roncevic"
         title = "Software Architect @ AVL"
-        about = "I ❤ programming. In it, I feel most creative."
+        about = """
+            I ❤ programming. In it, I feel most creative.
+        """
         img = "images/speakers/igor-roncevic.jpg"
         blog = "http://thehumbleprogrammer.com/"
         web = "https://www.avl.com/"
@@ -55,6 +118,90 @@ title = "Init Conference"
             For the sake of having more fun, focus, and productivity between our commits.
 
             I hope my positive experience will motivate you to start rewiring your own programmer's brains :-)
+        """
+
+    [[params.speaker.item]]
+        name = "Ivan Culjak"
+        title = "Cloud Solution Architect @ Celeste Maze"
+        about = """
+            Ivan is a .NET freelance developer in love with Azure, Xamarin, and the idea of automating whatever. He's also an Microsoft MVP for Azure <3. When he’s not developing something new, he’s salvaging something inherited, consulting with enthusiasm, and testing and breaking new technologies in a quest for something useful.
+        """
+        img =  "images/speakers/ivan-culjak.jpg"
+        blog = "https://www.culjak.xyz/"
+        web = "https://www.celestemaze.com/"
+        twitter = "https://twitter.com/culjakivan"
+        linkedin = "https://www.linkedin.com/in/culjakivan/"
+        talk = "Cloud architectural patterns 101"
+        content = """
+            Cloud has been a buzzword for almost ten years now, but still, a considerable portion of systems isn't "up there". The reasons vary from being scared through not having enough time to investigate it properly, to valid legal and/or technical reasons.
+            It's easy to get started and not so easy to make it right. Cloud requires serious thought and serious investment into learning the new concepts before one can understand what the trade-offs are.
+            We all heard of the horror stories of raking incredible fees by simply not understanding that having the infinite scaling set up creates infinite cost scaling as well.
+            Through many demanding migration projects, I realized there is no way I can satisfy the demand. There is simply no way to teach many organizations to bootstrap their cloud efforts right. So, I built the solution for that demand - a concentrated solution based on the verified, battle-tested configurations I made for clients throughout the years. One with proper security in place and tailored for real-world scenarios I encountered in my work.
+            The goal was to ease the migration, cut down the migration cost and duration, and increase the reliability and stability of the new system. But to make something like it, you first have to figure out which "templates" fit most of the use cases, and are a good fit to start extending for those cases which require more specializations.
+            Don't get me wrong... this isn't a sales talk, this is a talk about that journey, full of recommendations how to move to the cloud... any cloud, since the patterns and services are almost the same.
+            So please join to see us taking off the "mystery veil" off of the cloud, and discussing how to build your cloud native and/or hybrid cloud system without much fuss.
+        """
+
+    [[params.speaker.item]]
+        name = "Luka Gospodnetic"
+        title = "PKE Sistemi d.o.o."
+        about = """
+            Luka is an ICT expert with extensive experience in telecommunication, retail, logistics, healthcare and gaming industries.
+            Life drove him through various positions from development, architecting solutions, team leading to management positions and landed him in his current position as freelance expert who helps clients tackle their software development problems.
+            Luka has over 15 years of industry experience with a focus on enterprise technologies and solutions.
+            He is very passionate about technology and development and is a frequent speaker at ICT conferences on variety of interesting topics including development, architecture, managing development teams and others.
+            In his spare time he likes playing with his two daughters, reading books or playing basketball.
+        """
+        img = "images/speakers/luka-gospodnetic.jpg"
+        linkedin = "https://www.linkedin.com/in/lukagospodnetic/"
+        talk = "Learn blockchains by building one"
+        content = """
+            According to Google research, Bitcoin and blockchain were among the most searched terms in the past year, while blockchain technology is one of the leading developer trend at the moment.
+            More and more companies are looking for a way to use blockchain mania for their own benefit. Over 50 percent of large corporations are interested in building some kind of blockchain application.
+            Those are very good news for software developers. Why? Blockchain is explicitly based on software, how to safely store, share and maintain the data (transactions).
+            Blockchain applications can be developed in different programming languages like Go, C#, C++, Java or Python. During this presentation, after a short introduction about blockchain, we'll create our mini version of blockchain using JavaScript.
+            Why JavaScript? Because of the simplicity and the fact that the next assertion is TRUE: 9999999999999999 === 10000000000000000.
+            Let's make our own mini blockchain!
+        """
+
+    [[params.speaker.item]]
+        name = "Luka Kladaric"
+        title = "Chaos manager"
+        about = """
+            A former web developer turned architecture, infrastructure & security consultant. Also a remote work evangelist.
+        """
+        img = "images/speakers/luka-kladaric.jpg"
+        blog = "https://luka.io/"
+        web = "https://sekura.io/"
+        twitter = "https://twitter.com/kll"
+        github = "https://github.com/allixsenos"
+        linkedin = "https://www.linkedin.com/in/lukakladaric/"
+        talk = "The platform is dead, long live the platform"
+        content = """
+            Out with the old, in with the new. Replacing a functioning platform with shiny containerized automated goodness.
+
+            When companies evolve, their tech stacks need to as well. But sometimes you realize every single part of the machine needs evolving, and you're better off scrapping the entire thing.
+
+            Zero downtime migration from a legacy stack based on Jenkins, Ansible, Icinga, HAproxy, nginx, uwsgi, pypi, and Tomcat to a new one based on Travis, Docker, CloudFormation and ECS/Fargate with assorted tech debt solved on the way there.
+
+            A high level overview of current tech, leaning towards the "serverless" trend by having 0 self-managed resources ("classic servers"). Talk will focus on AWS offerings but is applicable to most of the popular public clouds.
+
+            It's basically a rich man's Heroku, with all the flexibility you might possibly need, while avoiding scary tech like Kubernetes which nobody wants to really learn how to manage properly.
+        """
+
+    [[params.speaker.item]]
+        name = "Nenad Trajkovski"
+        title = "DEDA"
+        about = """
+            I am Project Manager. I am working in NT Consulting. I am also a trainer for Project management and MS Project PMP, PMI-RMP, MCT, MCP, MCTS - Project i MVP - Project. I love to stair through the window. For some totally unknown reason everyone call me - Grandpa!
+        """
+        img = "images/speakers/nenad-trajkovski.jpg"
+        blog = "https://ntrajkovski.com/"
+        twitter = "https://twitter.com/ntrajkovski"
+        linkedin = "https://www.linkedin.com/in/nenad-trajkovski-a58a487/"
+        talk = "Agile development - are you really ready"
+        content = """
+            Do you know that more than 75% of all companies never succeeded with Agile? Are you aware which steps are necessary before you can say that you are agile? Do you know which mistakes are common to all IT companies? If your answers are mostly - YES, this session is just for you.
         """
 
     [[params.speaker.item]]
@@ -100,65 +247,11 @@ title = "Init Conference"
         """
 
     [[params.speaker.item]]
-        name = "Luka Kladaric"
-        title = "Chaos manager"
-        about = "A former web developer turned architecture, infrastructure & security consultant. Also a remote work evangelist."
-        img = "images/speakers/luka-kladaric.jpg"
-        blog = "https://luka.io/"
-        web = "https://sekura.io/"
-        twitter = "https://twitter.com/kll"
-        github = "https://github.com/allixsenos"
-        linkedin = "https://www.linkedin.com/in/lukakladaric/"
-        talk = "The platform is dead, long live the platform"
-        content = """
-            Out with the old, in with the new. Replacing a functioning platform with shiny containerized automated goodness.
-
-            When companies evolve, their tech stacks need to as well. But sometimes you realize every single part of the machine needs evolving, and you're better off scrapping the entire thing.
-
-            Zero downtime migration from a legacy stack based on Jenkins, Ansible, Icinga, HAproxy, nginx, uwsgi, pypi, and Tomcat to a new one based on Travis, Docker, CloudFormation and ECS/Fargate with assorted tech debt solved on the way there.
-
-            A high level overview of current tech, leaning towards the "serverless" trend by having 0 self-managed resources ("classic servers"). Talk will focus on AWS offerings but is applicable to most of the popular public clouds.
-
-            It's basically a rich man's Heroku, with all the flexibility you might possibly need, while avoiding scary tech like Kubernetes which nobody wants to really learn how to manage properly.
-        """
-
-    [[params.speaker.item]]
-        name = "Ratko Cosic"
-        title = "Senior Developer"
-        about = "Ratko is a senior developer at Ekobit. Leading or contributing in development of different IT solutions, from accounting, communication and manufacture systems. Lecturer and IT researcher in spare time, and a proud father to three kids."
-        img = "images/speakers/ratko-cosic.jpg"
-        web = "https://www.ekobit.com/"
-        twitter = "https://twitter.com/rcosic"
-        linkedin = "https://www.linkedin.com/in/ratko-%C4%87osi%C4%87-880b4027/"
-        talk = "Micro Frontends - micro-services on the frontend"
-        content = """
-            There are multiple advantages in successful techniques and strategies of micro-services, an architecture paradigm which is typical for backend.
-            The idea is to improve already standard SPA application development to make them use technology agnostic, isolated parts of code which are a flexible fit for the work with multiple teams.
-            Applications like that implement modern approaches like Progressive Web Applications (PWA) for offline work, web components, native browser APIs, server-side rendering, and even data access.
-            During this session, we'll take a look at advantages that micro frontend architecture provides as well as preparing the applications for the future that follows.
-        """
-
-    [[params.speaker.item]]
-        name = "Catalin Gheorghiu"
-        title = "I Computer Solutions"
-        about = """
-            Catalin is a solution architect from Timisoara Romania. The current interests are in the area of (I)IoT, industrial mobile and cloud solutions. In addition to addressing the software development and architecture, is a trainer and consultant. In his spare time is member of the technical community, contributing with articles and blogs (signed MrSmersh), presentations to several user groups/meetups (also is RONUA Timisoara user group leader), and lecturing all over Romania and abroad.
-            Since 2011, every year he was awarded the Microsoft MVP Award.
-        """
-        img = "images/speakers/catalin-gheorghiu.jpg"
-        web = "http://www.icomputersolutions.ro/en/index.htm"
-        twitter = "https://twitter.com/MrSmersh"
-        linkedin = "https://www.linkedin.com/in/catalingheorghiu/"
-        talk = "Machine Learning on the IoT Edge"
-        content = """
-            Or options in running TensorFlow on Pi. My idea was (a bit born from need), to run TensorFlow on Pi class device. And this presentation is born from my adventures, showing pro and cons of each approach. From running directly on Pi to Azure IoT Edge on to Intel Neural Stick, and the list most probably is in “works” you will see the challenges and results of implementing TensorFlow using these technologies. Remark: Kinder chocolates have noting to do with ML but will be present ;).
-        """
-        cospeaker = "Rastko Djordjevic"
-
-    [[params.speaker.item]]
         name = "Rastko Djordjevic"
         title = "Student"
-        about = "Rastko is 17 years old and student of the 2nd grade of High School. He is focused on Microsoft's technologies, especially Azure IoT and the whole IoT ecosystem. He is intensively engaged in robotics. Mainly uses C# for programming, but likes to experiment and learn new programming languages."
+        about = """
+            Rastko is 17 years old and student of the 2nd grade of High School. He is focused on Microsoft's technologies, especially Azure IoT and the whole IoT ecosystem. He is intensively engaged in robotics. Mainly uses C# for programming, but likes to experiment and learn new programming languages.
+        """
         img = "images/speakers/rastko-djordjevic.jpg"
         blog = "https://ra5tko.com/"
         twitter = "https://twitter.com/ra5tko"
@@ -169,98 +262,21 @@ title = "Init Conference"
         cospeaker = "Catalin Gheorghiu"
 
     [[params.speaker.item]]
-        name = "Dragan Lalos"
-        title = "STA Travel - Teamleader Applications R&D"
-        about = "I have been working as a software engineer for more than eight years. Currently, I am responsible for spotting internal or external problems and finding solutions that should enable the company to work faster, and lower the costs."
-        img = "images/speakers/dragan-lalos.jpg"
-        web = "https://www.statravel.de/"
-        linkedin = "https://www.linkedin.com/in/draganlalos/"
-        talk = "JS: Where to implement rendering in your application - CSR or SSR?"
-        content = """
-            These days Single Page Application (SPA) is trendy, and with that Client Side Rendering (CSR) comes by default, and people forget what Server Side Rendering (SSR) is. Let's try to explain what is the difference between these two, so you understand architecture better when you need to decide on what will you use. CSR or SSR?
-        """
-
-    [[params.speaker.item]]
-        name = "Luka Gospodnetic"
-        title = "PKE Sistemi d.o.o."
+        name = "Ratko Cosic"
+        title = "Senior Developer"
         about = """
-            Luka is an ICT expert with extensive experience in telecommunication, retail, logistics, healthcare and gaming industries.
-            Life drove him through various positions from development, architecting solutions, team leading to management positions and landed him in his current position as freelance expert who helps clients tackle their software development problems.
-            Luka has over 15 years of industry experience with a focus on enterprise technologies and solutions.
-            He is very passionate about technology and development and is a frequent speaker at ICT conferences on variety of interesting topics including development, architecture, managing development teams and others.
-            In his spare time he likes playing with his two daughters, reading books or playing basketball.
+            Ratko is a senior developer at Ekobit. Leading or contributing in development of different IT solutions, from accounting, communication and manufacture systems. Lecturer and IT researcher in spare time, and a proud father to three kids.
         """
-        img = "images/speakers/luka-gospodnetic.jpg"
-        linkedin = "https://www.linkedin.com/in/lukagospodnetic/"
-        talk = "Learn blockchains by building one"
+        img = "images/speakers/ratko-cosic.jpg"
+        web = "https://www.ekobit.com/"
+        twitter = "https://twitter.com/rcosic"
+        linkedin = "https://www.linkedin.com/in/ratko-%C4%87osi%C4%87-880b4027/"
+        talk = "Micro Frontends - micro-services on the frontend"
         content = """
-            According to Google research, Bitcoin and blockchain were among the most searched terms in the past year, while blockchain technology is one of the leading developer trend at the moment.
-            More and more companies are looking for a way to use blockchain mania for their own benefit. Over 50 percent of large corporations are interested in building some kind of blockchain application.
-            Those are very good news for software developers. Why? Blockchain is explicitly based on software, how to safely store, share and maintain the data (transactions).
-            Blockchain applications can be developed in different programming languages like Go, C#, C++, Java or Python. During this presentation, after a short introduction about blockchain, we'll create our mini version of blockchain using JavaScript.
-            Why JavaScript? Because of the simplicity and the fact that the next assertion is TRUE: 9999999999999999 === 10000000000000000.
-            Let's make our own mini blockchain!
-        """
-
-    [[params.speaker.item]]
-        name = "Vladimir Jovanovic"
-        title = "Senior Android Engineer"
-        about = "Vladimir is a passionate Android developer. Over the past 6 years, he has been helping companies have clean and stable Android applications. He currently lives in Berlin and is an active member of Berlin's Android community. As part of the FlixBus team, he is bringing a green way of transportation to the world."
-        img = "images/speakers/vladimir-jovanovic.jpg"
-        blog = "https://vladimirj.dev/"
-        web = "https://global.flixbus.com/"
-        twitter = "https://twitter.com/VladimirWrites"
-        github = "https://github.com/VladimirWrites"
-        linkedin = "https://www.linkedin.com/in/vladimir-j/"
-        talk = "Rewrite or Refactor That Is the Question"
-        content = """
-            Two teams solving the same problem in two different ways.
-            This talk will follow the Android and iOS teams at FlixBus fighting with legacy code, each in their own way.
-            The Android team chose to refactor their old app, while the iOS team decided to create a brand new application.
-
-            In this talk, we will consider the benefits and drawbacks of both approaches. We will also go through the pitfalls that you may encounter on these paths to a modern codebase.
-            By the end of this talk, you will have all the necessary knowledge to pick the best path for you when fighting with the technical debt.
-        """
-
-    [[params.speaker.item]]
-        name = "Nenad Trajkovski"
-        title = "DEDA"
-        about = "I am Project Manager. I am working in NT Consulting. I am also a trainer for Project management and MS Project PMP, PMI-RMP, MCT, MCP, MCTS - Project i MVP - Project. I love to stair through the window. For some totally unknown reason everyone call me - Grandpa!"
-        img = "images/speakers/nenad-trajkovski.jpg"
-        blog = "https://ntrajkovski.com/"
-        twitter = "https://twitter.com/ntrajkovski"
-        linkedin = "https://www.linkedin.com/in/nenad-trajkovski-a58a487/"
-        talk = "Agile development - are you really ready"
-        content = """
-            Do you know that more than 75% of all companies never succeeded with Agile? Are you aware which steps are necessary before you can say that you are agile? Do you know which mistakes are common to all IT companies? If your answers are mostly - YES, this session is just for you.
-        """
-
-    [[params.speaker.item]]
-        name = "Darko Mesaros"
-        title = "Specialist Solutions Architect @ AWS"
-        about = "Darko is a Solutions Architect working for AWS in Berlin, Germany. As a SA within AWS, he helps shape the strategy and enable the broad use of Amazon's utility computing web services by directly working with customers. Darko owns the technical engagement and defining implementation architectures, developing deep expertise in the AWS technologies as well as broad know-how about how applications and services are constructed using the AWS platform. He comes from Subotica, Serbia."
-        img = "images/speakers/darko-mesaros.jpg"
-        twitter = "https://twitter.com/darkosubotica"
-        linkedin = "https://www.linkedin.com/in/darko-mesaro%C5%A1-02b66622/"
-        talk = "Tale of Two Pizzas: Developer Tools @ AWS"
-        content = """
-            In this session, we will cover how you begin your DevOps journey by sharing best practices and tools by the "two pizza" engineering teams at Amazon. Darko will showcase how you can accelerate developer productivity by implementing continuous integration and delivery workflows. We will also cover an introduction to AWS Developer Tools set of Services, inspired by Amazon's internal developer tools and DevOps practice.
-        """
-
-    [[params.speaker.item]]
-        name = "Zoran Horvat"
-        title = "Principal consultant at Coding Helmet s.p.r.l."
-        about = "Zoran is Principal consultant at Coding Helmet Consultancy, speaker and author of 100+ articles, and independent trainer on .NET technology stack. He can often be found speaking at conferences and user groups, promoting object-oriented development style and clean coding practices and techniques that improve longevity of complex business applications."
-        img = "images/speakers/zoran-horvat.jpg"
-        blog = "http://codinghelmet.com/articles"
-        web = "https://app.pluralsight.com/profile/author/zoran-horvat"
-        twitter = "https://twitter.com/zoranh75"
-        linkedin = "https://www.linkedin.com/in/zoran-horvat/"
-        talk = "Possibilities of functional design in C# 8"
-        content = """
-            Object-oriented and functional programming have always been the two sides of the same coin. A recent development of typical object-oriented languages, like C# and Java, confirms that the mixing of paradigms is possible (and preferable) inside the same codebase.
-            During this talk, we'll see the new functional features that came with a new syntax in C# 8. We'll show the advancements in pattern matching syntax and the consequence it had on class design.
-            We'll see that functional design is already a real possibility in C#, despite the obvious syntax flaws when compared with pure functional languages.
+            There are multiple advantages in successful techniques and strategies of micro-services, an architecture paradigm which is typical for backend.
+            The idea is to improve already standard SPA application development to make them use technology agnostic, isolated parts of code which are a flexible fit for the work with multiple teams.
+            Applications like that implement modern approaches like Progressive Web Applications (PWA) for offline work, web components, native browser APIs, server-side rendering, and even data access.
+            During this session, we'll take a look at advantages that micro frontend architecture provides as well as preparing the applications for the future that follows.
         """
 
     [[params.speaker.item]]
@@ -289,28 +305,6 @@ title = "Init Conference"
         """
 
     [[params.speaker.item]]
-        name = "Ivan Culjak"
-        title = "Cloud Solution Architect @ Celeste Maze"
-        about = """
-            Ivan is a .NET freelance developer in love with Azure, Xamarin, and the idea of automating whatever. He's also an Microsoft MVP for Azure <3. When he’s not developing something new, he’s salvaging something inherited, consulting with enthusiasm, and testing and breaking new technologies in a quest for something useful.
-        """
-        img =  "images/speakers/ivan-culjak.jpg"
-        blog = "https://www.culjak.xyz/"
-        web = "https://www.celestemaze.com/"
-        twitter = "https://twitter.com/culjakivan"
-        linkedin = "https://www.linkedin.com/in/culjakivan/"
-        talk = "Cloud architectural patterns 101"
-        content = """
-            Cloud has been a buzzword for almost ten years now, but still, a considerable portion of systems isn't "up there". The reasons vary from being scared through not having enough time to investigate it properly, to valid legal and/or technical reasons.
-            It's easy to get started and not so easy to make it right. Cloud requires serious thought and serious investment into learning the new concepts before one can understand what the trade-offs are.
-            We all heard of the horror stories of raking incredible fees by simply not understanding that having the infinite scaling set up creates infinite cost scaling as well.
-            Through many demanding migration projects, I realized there is no way I can satisfy the demand. There is simply no way to teach many organizations to bootstrap their cloud efforts right. So, I built the solution for that demand - a concentrated solution based on the verified, battle-tested configurations I made for clients throughout the years. One with proper security in place and tailored for real-world scenarios I encountered in my work.
-            The goal was to ease the migration, cut down the migration cost and duration, and increase the reliability and stability of the new system. But to make something like it, you first have to figure out which "templates" fit most of the use cases, and are a good fit to start extending for those cases which require more specializations.
-            Don't get me wrong... this isn't a sales talk, this is a talk about that journey, full of recommendations how to move to the cloud... any cloud, since the patterns and services are almost the same.
-            So please join to see us taking off the "mystery veil" off of the cloud, and discussing how to build your cloud native and/or hybrid cloud system without much fuss.
-        """
-
-    [[params.speaker.item]]
         name = "Tomislav Bronzin"
         title = "Microsoft Regional Director & MVP, CITUS"
         about = """
@@ -333,22 +327,44 @@ title = "Init Conference"
         cospeaker = "Arian Stipic"
 
     [[params.speaker.item]]
-        name = "Arian Stipic"
-        title = "Digital Transformation Advisor / Digital Architect"
+        name = "Vladimir Jovanovic"
+        title = "Senior Android Engineer"
         about = """
-            Digital Transformation Advisor and Digital Architect officially certified for Digital Business Transformation Management with more than two decades of experience in managing enterprise and solution architectures and leading global teams to design, deliver and coordinate digital transformation projects and solutions in medium (+5M$), large (+25M$) and mega (+100M$) projects.
-            More than 20 years of experience in a combination of consulting, management, presales, sales and development activities with emphasis on advisory, IT strategy consulting, business development, partner management. Supervised RFP responses and managed small and medium-sized (up to 50 people) multinational teams.
-            Whenever possible, more oriented towards long term strategy, context, outcomes and benefits as opposed to short term tactics, content, outputs and deliverables.
-            A generalist specialized in Business Intelligence, including data warehouse modernization, Big Data, Advanced Analytics and Artificial Intelligence.
-            Trusted advisor to clients in multiple global industries including healthcare, transportation, retail, education and telecom throughout EMEA region.
+            Vladimir is a passionate Android developer. Over the past 6 years, he has been helping companies have clean and stable Android applications. He currently lives in Berlin and is an active member of Berlin's Android community. As part of the FlixBus team, he is bringing a green way of transportation to the world.
         """
-        img =  "images/speakers/arian-stipic.jpg"
-        linkedin = "https://www.linkedin.com/in/arian-stipic/"
-        talk = "Deep learning advancements"
+        img = "images/speakers/vladimir-jovanovic.jpg"
+        blog = "https://vladimirj.dev/"
+        web = "https://global.flixbus.com/"
+        twitter = "https://twitter.com/VladimirWrites"
+        github = "https://github.com/VladimirWrites"
+        linkedin = "https://www.linkedin.com/in/vladimir-j/"
+        talk = "Rewrite or Refactor That Is the Question"
         content = """
-            This session explains how recent development in the field of Artificial Intelligence (AI) makes gap between human and machine smaller than ever before, by explaining and comparing traditional approach user in development of AI systems with new approach that has been used by AI system AlphaZero, developed by DeepMind. Traditionally AI systems have been tested in chess and the same has been done to demonstrate the power of AlphaZero. But, instead of playing against human, it played against the best (at the time) chess program Stockfish. While chess programs (before AlphaZero), were using powerful hardware and embedded built-in formal knowledge about the game, AlphaZero is using completely new approach, running on standard hardware and using deep learning. It learned about the game by playing a large number of games with itself, learning in the process. Session will also explain what is so revolutionary in AlphaZero approach to AI and how this new approach can be used in different areas of processing visual information, bio-medicine, autonomous driving, robotics and AI generated images/videos of humans.
+            Two teams solving the same problem in two different ways.
+            This talk will follow the Android and iOS teams at FlixBus fighting with legacy code, each in their own way.
+            The Android team chose to refactor their old app, while the iOS team decided to create a brand new application.
+
+            In this talk, we will consider the benefits and drawbacks of both approaches. We will also go through the pitfalls that you may encounter on these paths to a modern codebase.
+            By the end of this talk, you will have all the necessary knowledge to pick the best path for you when fighting with the technical debt.
         """
-        cospeaker = "Tomislav Bronzin"
+
+    [[params.speaker.item]]
+        name = "Zoran Horvat"
+        title = "Principal consultant at Coding Helmet s.p.r.l."
+        about = """
+            Zoran is Principal consultant at Coding Helmet Consultancy, speaker and author of 100+ articles, and independent trainer on .NET technology stack. He can often be found speaking at conferences and user groups, promoting object-oriented development style and clean coding practices and techniques that improve longevity of complex business applications.
+        """
+        img = "images/speakers/zoran-horvat.jpg"
+        blog = "http://codinghelmet.com/articles"
+        web = "https://app.pluralsight.com/profile/author/zoran-horvat"
+        twitter = "https://twitter.com/zoranh75"
+        linkedin = "https://www.linkedin.com/in/zoran-horvat/"
+        talk = "Possibilities of functional design in C# 8"
+        content = """
+            Object-oriented and functional programming have always been the two sides of the same coin. A recent development of typical object-oriented languages, like C# and Java, confirms that the mixing of paradigms is possible (and preferable) inside the same codebase.
+            During this talk, we'll see the new functional features that came with a new syntax in C# 8. We'll show the advancements in pattern matching syntax and the consequence it had on class design.
+            We'll see that functional design is already a real possibility in C#, despite the obvious syntax flaws when compared with pure functional languages.
+        """
 
 # Navigation section
 [params.nav]
