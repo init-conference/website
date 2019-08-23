@@ -16,19 +16,17 @@
                     <div class="row">
                         {{range $index, $element := .Site.Params.speaker.item}}
                         <div class="col-sm-3">
-                            <div class="speaker-box">
+                            <a
+                            href="#"
+                            data-toggle="modal"
+                            data-target="#speaker{{ $index }}" class="speaker-box">
                                 <img src="{{.img}}" />
                                 <div class="speaker-box__details">
                                     <h5>{{.name}}</h5>
                                     <h6>{{.talk}}</h6>
-                                    <a
-                                        href="#"
-                                        data-toggle="modal"
-                                        data-target="#speaker{{ $index }}"
-                                        >Read more</a
-                                    >
+                                    <span>Read more</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         {{ end }}
                     </div>
@@ -59,7 +57,7 @@
                             <img src="{{.img}}" />
                         </div>
                         <div class="col-sm-8">
-                                <h3 class="modal-title">{{.talk}}</h3>{{.content}}</div>
+                                <h3 class="modal-title">{{.talk}}</h3>{{.content | safeHTML}}</div>
                     </div>
                 </div>
             </div>

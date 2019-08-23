@@ -1,13 +1,13 @@
 .lineup-section {
     padding: 140px 0 240px 0;
-    background-image: url(../images/speakers-text-bg.png),
-        url(../images/speakers-top-bg.png), url(../images/bottom-speaker-bg.png);
+    background-image: url(../images/speakers-text-bg.png), url(../images/speakers-top-bg.png),
+        url(../images/bottom-speaker-bg.png);
     background-repeat: no-repeat;
     background-position: center 95px, center top, 35% bottom;
     //animation-name: load-speaker-bg;
     //animation-duration: 15s;
     //animation-fill-mode: forwards;
-    background-size: auto, 80%, 60%; 
+    background-size: auto, 80%, 60%;
     &__subtitle {
         color: $color_primary;
         font-size: 64px;
@@ -32,7 +32,7 @@
     position: relative;
     padding-bottom: 20px;
     &:before {
-        content: "";
+        content: '';
         position: absolute;
         display: block;
         width: 80%;
@@ -52,19 +52,26 @@
         &:nth-child(3) {
             margin-top: 40px;
         }
-        &:nth-child(6), &:nth-child(10), &:nth-child(14) {
+        &:nth-child(6),
+        &:nth-child(10),
+        &:nth-child(14) {
             margin-top: -40px;
         }
-        &:nth-child(7), &:nth-child(11), &:nth-child(15) {
+        &:nth-child(7),
+        &:nth-child(11),
+        &:nth-child(15) {
             margin-top: -80px;
         }
-        &:nth-child(8), &:nth-child(12), &:nth-child(16) {
+        &:nth-child(8),
+        &:nth-child(12),
+        &:nth-child(16) {
             margin-top: -120px;
         }
     }
 }
 
 .speaker-box {
+    display: block;
     &__details {
         margin-top: 10px;
         min-height: 100px;
@@ -80,12 +87,17 @@
             font-style: italic;
             color: $color_brand;
         }
-        a {
+        span {
             font-size: 14px;
             text-transform: uppercase;
             opacity: 0.6;
             color: $color_grey;
             letter-spacing: 1.8px;
+        }
+    }
+    &:hover {
+        span {
+            color: $color_primary;
         }
     }
 }
@@ -105,10 +117,11 @@
 .speaker-modal .modal-content {
     background-color: $color_body_background;
 
-    .modal-header, .modal-footer {
+    .modal-header,
+    .modal-footer {
         border: 0;
     }
-    
+
     .modal-title {
         color: $color_brand;
         font-size: 21px;
@@ -129,6 +142,4 @@
     img {
         margin-bottom: 15px;
     }
-
-
 }
