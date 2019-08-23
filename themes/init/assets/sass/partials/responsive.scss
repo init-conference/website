@@ -334,6 +334,23 @@
 }
 
 
+@media (max-width: 570px) {
+    .all-speakers .col .row:first-child .col-sm-3 {
+        margin: 0!important;
+        padding-bottom: 50px;
+    }
+    .speaker-box {
+        &__details {
+            min-height: 1px;
+            a {
+                display: inline-block;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
 @media (max-width: 500px) {
     .hero {
         /*background-size: auto;
