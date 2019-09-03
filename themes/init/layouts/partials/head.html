@@ -39,6 +39,9 @@
 <!-- Bootstrap  -->
 <link rel="stylesheet" href="/css/bootstrap.css" />
 
+<!-- Fontawesome -->
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
 <!-- Theme style -->
 {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
 {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Fingerprint "sha512" }}

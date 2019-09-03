@@ -1,0 +1,31 @@
+.team-member {
+    margin-bottom: 60px;
+    img {
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-size: 21px;
+        line-height: 27px;
+        color: $color_brand;
+        margin-bottom: 3px;
+    }
+    &__role {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        font-style: italic;
+        color: $color_brand;
+        margin-bottom: 6px;
+    }
+    a {
+        color: #fff;
+        opacity: 0.4;
+        display: inline-block;
+        margin-left: 4px;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+}
