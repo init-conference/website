@@ -6,6 +6,9 @@
     .why-text {
         padding: 0;
     }
+    #map {
+        height: 350px;
+    }
 }
 
 /** Tablet **/
@@ -32,7 +35,10 @@
     }
     .lineup-section__subtitle {
         font-size: 50px;
-    } 
+    }
+    #map {
+        height: 250px;
+    }
     .sponsor-list {
         &--supporter {
             li {
@@ -44,7 +50,7 @@
                 max-width: 30%;
             }
         }
-    } 
+    }
     .button-sponsor-top {
         float: none;
         margin: 20px 0 40px 0;
@@ -273,7 +279,6 @@
         top: 0;
         left: -3%;
     }
-    
 
     /** Venue **/
     .venue-section {
@@ -300,7 +305,7 @@
     }
 
     /** Subscribe **/
-    .sbscribe-section {
+    .subscribe-section {
         background-image: none;
         padding-top: 20px;
     }
@@ -372,7 +377,7 @@
                 margin-right: 5%;
             }
         }
-    } 
+    }
     /** Jobs Page **/
     .job-accordion {
         img {
@@ -392,7 +397,7 @@
 
 
 /** Landscape **/
-@media only screen 
+@media only screen
   and (max-device-width: 736px)
   and (orientation: landscape) {
       .hero {
