@@ -1,0 +1,17 @@
+.agenda {
+    margin-top: 70px;
+    h3 {
+        font-size: 21px;
+        color: $color_primary;
+        margin-bottom: 40px;
+    }
+}
+
+.agenda-stage {
+    border-left: 1px solid #00176B;
+    list-style: none;
+    margin-left: -20px;
+    li {
+        padding-left: 20px;
+    }
+}
