@@ -17,11 +17,11 @@
     font-size: 21px;
     line-height: 31px;
     font-weight: 500;
-    margin-bottom: 20px!important;
+    margin-bottom: 20px !important;
 }
 
 .agenda-stage {
-    border-left: 1px solid #00176B;
+    border-left: 1px solid #00176b;
     padding-right: 80px;
     list-style: none;
     margin-left: -30px;
@@ -33,7 +33,7 @@
             content: '';
             position: absolute;
             display: block;
-            background-color: #00176B;
+            background-color: #00176b;
             width: 15px;
             height: 15px;
             border-radius: 50%;
@@ -41,7 +41,7 @@
             top: 0;
         }
         h6 {
-            color: #DFE0D5;
+            color: #dfe0d5;
             font-size: 16px;
             margin-bottom: 10px;
         }
@@ -54,5 +54,8 @@
             font-size: 16px;
             color: $color_secondary;
         }
+    }
+    &--two {
+        margin-top: 415px;
     }
 }
